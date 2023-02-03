@@ -17,8 +17,9 @@ def main():
         f.write(random_string())
     os.system(f'git add .')
     os.system(f'git -C {dir_path} commit -am "Atualizado"')
+    os.system(f'git push origin master')
 
 if __name__ == "__main__":
     while True:
         main()
-        time.sleep(60 * 20)
+        time.sleep(60 * 5)
