@@ -15,6 +15,7 @@ def random_string(stringLength=600):
 def main():
     with open(filename, "w") as f:
         f.write(random_string())
+    os.system(f'git add .')
     os.system(f'git -C {dir_path} commit -am "Atualizado"')
 
 if __name__ == "__main__":
