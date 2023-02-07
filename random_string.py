@@ -19,6 +19,7 @@ def main():
     os.system(f'git push origin master')
 
 if __name__ == "__main__":
-    while True:
-        main()
-        time.sleep(60 * 30)
+    main()
+    #while True:
+    #    main()
+    #    time.sleep(60 * 30)
