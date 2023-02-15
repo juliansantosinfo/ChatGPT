@@ -14,6 +14,7 @@ def main():
     filename = os.path.join(dir_path, f"minha_lista_{filename}.txt")
     with open(filename, "w") as f:
         f.write(random_string())
+    os.system(f'cd {dir_path}')
     os.system(f'git add .')
     os.system(f'git -C {dir_path} commit -am "Atualizado"')
     os.system(f'git push origin master')
