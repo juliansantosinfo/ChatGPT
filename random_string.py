@@ -9,7 +9,7 @@ def random_string(stringLength=600):
     return ''.join(random.choice(letters) for i in range(stringLength))
 
 def main():
-    dir_path = "D:\\Documents\\Python\ChatGPT\\"
+    dir_path = "D:\\Documents\\Python\ChatGPT\\files\\"
     filename = datetime.datetime.now().isoformat().replace(":","").replace("-","").replace(".","")
     filename = os.path.join(dir_path, f"minha_lista_{filename}.txt")
     with open(filename, "w") as f:
